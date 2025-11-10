@@ -1,0 +1,363 @@
+/*RESET*/
+body, h1 , h2, h3, h4, figure {margin: 0;}
+a{color: inherit;}
+
+/*BODY*/
+body{font-family: Arial, Helvetica, sans-serif;}
+body{
+    box-sizing: border-box;
+}
+
+h3{
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*MENU*/
+
+.menu{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 60px;
+    border-bottom: 30px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    height: 90px;
+}
+
+
+.nav-links{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    display: flex;
+    gap: 235px;
+    font-size: 18px;
+}
+
+.botão{
+    background-color: #ffff00;
+    padding: 5px 16px;
+    border-radius: 50px;
+}
+
+
+/*HERO*/
+
+.hero{
+    background-image: url('../imagens/bck\ img.png');
+    background-size: cover;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.hero h2{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+
+/*TEMA*/
+
+.tema{
+    border-bottom: 3.5px solid;
+    border-top: 3.5px solid;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tema h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    display: inline-block;
+    animation: move 100s linear infinite alternate;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+
+/*PARTICIPA*/
+
+.participa{
+    background-image: url('../imagens/imagem\ background.jpg');
+    text-align: center;
+    padding: 100px 0px;
+    background-position: center -55px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.participa a{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    background-color: #ffff00;
+    font-size: 40px;
+    padding: 25px 60px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 0px #000;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.participa a:hover {
+  background-color: #d0e8ee;
+}
+
+
+/*SOBRE NÓS*/
+
+.sobre-nós{
+    background-color: #d0e8ee;
+    padding: 50px 80px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nós p{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+
+
+/*IMPACTO*/
+
+.impacto{
+    background-color: #f7eddc;
+    padding: 50px 80px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.impacto-grid{
+    display: grid;
+    gap: 17px;
+    margin: auto;
+    max-width: 900px;
+}
+
+.impacto-grid img{
+    width: 265px;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.impacto-grid h4{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 22px;
+    margin-top: 70px;
+}
+
+.impacto-politico h4{
+    margin-left: 50px;
+}
+
+.impacto-politico p{
+    margin-left: 50px;
+}
+
+.impacto-cultural p{
+    margin-right: 50px;
+}
+
+.impacto-industrial h4{
+    margin-left: 50px;
+}
+
+.impacto-industrial p{
+    margin-left: 50px;
+}
+
+.impacto-grid p{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.impacto-politico{
+    background-color: #f3a291;
+    display: flex;
+    border-top-left-radius: 80px;
+    max-width: 730px;
+    height: 268px;
+    margin: 0 auto;
+    gap: 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.impacto-cultural{
+    background-color: #f3a291;
+    display: flex;
+    border-top-right-radius: 80px;
+    max-width: 730px;
+    height: 268px;
+    margin: 0 auto;
+    gap: 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+
+.impacto-industrial{
+    background-color: #f3a291;
+    display: flex;
+    border-top-left-radius: 80px;
+    max-width: 730px;
+    height: 268px;
+    margin: 0 auto;
+    gap: 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+
+/*PROGRAMA*/
+
+.programa{
+    background-color: #d0e8ee;
+    padding: 50px 80px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendário{
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    height: 470px;
+}
+
+.dia{
+    background-color: #f3a291;
+    padding: 20px 20px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 30px;
+}
+
+.programa h5{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.data{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #f7eddc;
+    padding: 15px 0;
+}
+
+.atividades{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+}
+
+.dia a{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    margin-top: auto;
+    text-decoration: underline;
+}
+
+
+/*FORM*/
+
+.win{
+    background-color: #f7eddc;
+    padding: 110px 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.input-element{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 13px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    background-color: #ffff00;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 30px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .redes-sociais img{
+    width: 50px;
+    margin: 2px 5px;
+}
+
+footer p{
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
